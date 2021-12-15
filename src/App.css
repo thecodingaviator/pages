@@ -1,4 +1,4 @@
-.App {
+.Appa {
   text-align: center;
   min-width: 320px;
   max-width: 960px;
@@ -6,8 +6,24 @@
   min-height: 100vh;
 }
 
-.App h1 {
+.Appa h1 {
   color: white;
   margin-top: max(30px, 10vh);
   margin-bottom: max(10px, 5vh);
+}
+
+footer {
+  height: max(100px, 10vh);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1d2b;
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
 }

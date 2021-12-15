@@ -33,10 +33,18 @@ function App() {
   } else {
     return (
       <div className="App">
-        <h1>Parth's CloudFlare Based Social Media Platform</h1>
-        {posts.map(post => (
-          <Card title={post.title} username={post.username} content={post.content} />
-        ))}
+        <div className="Appa">
+          <h1>Parth's CloudFlare Based Social Media Platform</h1>
+          {posts.map(post => (
+            <Card title={post.title} username={post.username} content={post.content} />
+          ))}
+          
+        </div>
+        <footer>
+          <a href="//parthparth.com">&copy; Parth Parth 2021</a>
+          &emsp;
+          <a href="mailto:hi@parthparth.com">hi@parthparth.com</a>
+          </footer>
       </div>
     );
   }
