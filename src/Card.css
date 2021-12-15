@@ -1,0 +1,43 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  width: 40vw;
+  max-width: 450px;
+  min-width: 400px;
+  padding: 10px;
+  margin-bottom: 5vh;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    'title username'
+    'description description';
+}
+
+.card h3 {
+  grid-area: title;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.card span {
+  grid-area: username;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.card span a {
+  color: blue;
+  text-decoration: none;
+}
+
+.card p {
+  grid-area: description;
+  text-align: justify;
+}

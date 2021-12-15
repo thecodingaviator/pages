@@ -1,6 +1,13 @@
 .App {
   text-align: center;
+  min-width: 320px;
   max-width: 960px;
-  background-color: white;
+  background-color: transparent;
   min-height: 100vh;
+}
+
+.App h1 {
+  color: white;
+  margin-top: max(30px, 10vh);
+  margin-bottom: max(10px, 5vh);
 }

@@ -1,5 +1,6 @@
 import './App.css';
 import { useState, useEffect } from 'react';
+import Card from './Card.js';
 
 function App() {
   const [error, setError] = useState(null);
@@ -10,9 +11,10 @@ function App() {
     fetch("https://workers.hiparthparth7631.workers.dev/posts", {
       method: 'GET'
     })
-      .then(res => {console.clear(); console.log(res.json()); return res.json()})
+      .then(res => { console.clear(); return res.json() })
       .then(
         (result) => {
+          console.log(result);
           setIsLoaded(true);
           setPosts(result);
         },
@@ -31,13 +33,10 @@ function App() {
   } else {
     return (
       <div className="App">
-        <ul>
-          {posts.map(post => (
-            <li>
-              {post.title}
-            </li>
-          ))}
-        </ul>
+        <h1>Parth's CloudFlare Based Social Media Platform</h1>
+        {posts.map(post => (
+          <Card title={post.title} username={post.username} content={post.content} />
+        ))}
       </div>
     );
   }
